@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GeometricObjects_Suite]">
+  <test name="Group_Test(failed)">
+    <groups>
+      <run>
+        <include name="perimeterGroup"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="geometricObjects.groupTests.GroupTests">
+        <methods>
+          <include name="circleCreation"/>
+          <include name="rectangleCreation"/>
+          <include name="perimeterRectangleTest"/>
+          <include name="quadrateCreation"/>
+        </methods>
+      </class> <!-- geometricObjects.groupTests.GroupTests -->
+    </classes>
+  </test> <!-- Group_Test(failed) -->
+</suite> <!-- Failed suite [GeometricObjects_Suite] -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters suite">
+ <parameter name="parameter_1" value="8"></parameter>
+ <parameter name="parameter_2" value="7"></parameter>
+ <parameter name="parameter_3" value="4"></parameter>
+   <test verbose="2" name="Parameter test">
+    <classes>
+      <class name="geometricObjects.parametersTests.ParametersTest"/>
+    </classes>
+  </test> 
+</suite> 

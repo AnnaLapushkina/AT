@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="14" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG suite" duration-ms="84" started-at="2015-11-24T06:50:29Z" finished-at="2015-11-24T06:50:29Z">
+    <groups>
+    </groups>
+    <test name="ConcreteFigureTests" duration-ms="38" started-at="2015-11-24T06:50:29Z" finished-at="2015-11-24T06:50:29Z">
+      <class name="geometricObjects.concreteTests.RectangleTest">
+        <test-method status="PASS" signature="rectangleCreation()[pri:0, instance:geometricObjects.concreteTests.RectangleTest@2779bd11]" name="rectangleCreation" is-config="true" duration-ms="0" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rectangleCreation -->
+        <test-method status="PASS" signature="isQuadrateTest()[pri:0, instance:geometricObjects.concreteTests.RectangleTest@2779bd11]" name="isQuadrateTest" duration-ms="0" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isQuadrateTest -->
+        <test-method status="PASS" signature="perimeterTest()[pri:1, instance:geometricObjects.concreteTests.RectangleTest@2779bd11]" name="perimeterTest" duration-ms="0" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- perimeterTest -->
+        <test-method status="PASS" signature="squareTest()[pri:2, instance:geometricObjects.concreteTests.RectangleTest@2779bd11]" name="squareTest" duration-ms="0" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- squareTest -->
+      </class> <!-- geometricObjects.concreteTests.RectangleTest -->
+      <class name="geometricObjects.concreteTests.CircleTest">
+        <test-method status="PASS" signature="circleCreation()[pri:0, instance:geometricObjects.concreteTests.CircleTest@615fe0ec]" name="circleCreation" is-config="true" duration-ms="8" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circleCreation -->
+        <test-method status="PASS" signature="circumferenceTest()[pri:0, instance:geometricObjects.concreteTests.CircleTest@615fe0ec]" name="circumferenceTest" duration-ms="6" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circumferenceTest -->
+        <test-method status="PASS" signature="squareTest()[pri:0, instance:geometricObjects.concreteTests.CircleTest@615fe0ec]" name="squareTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" depends-on-methods="geometricObjects.concreteTests.CircleTest.circumferenceTest" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- squareTest -->
+      </class> <!-- geometricObjects.concreteTests.CircleTest -->
+      <class name="geometricObjects.concreteTests.QuadrateTest">
+        <test-method status="PASS" signature="quadrateCreation()[pri:0, instance:geometricObjects.concreteTests.QuadrateTest@7a61053]" name="quadrateCreation" is-config="true" duration-ms="1" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadrateCreation -->
+        <test-method status="PASS" signature="squareTest()[pri:0, instance:geometricObjects.concreteTests.QuadrateTest@7a61053]" name="squareTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- squareTest -->
+        <test-method status="PASS" signature="perimeterTest()[pri:0, instance:geometricObjects.concreteTests.QuadrateTest@7a61053]" name="perimeterTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" depends-on-methods="geometricObjects.concreteTests.QuadrateTest.squareTest" finished-at="2015-11-24T10:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- perimeterTest -->
+      </class> <!-- geometricObjects.concreteTests.QuadrateTest -->
+    </test> <!-- ConcreteFigureTests -->
+    <test name="ExceptionsTests" duration-ms="4" started-at="2015-11-24T06:50:29Z" finished-at="2015-11-24T06:50:29Z">
+      <class name="geometricObjects.exceptionsTests.ExceptionsTest">
+        <test-method status="PASS" signature="quadrateCreationNegativeSide()[pri:0, instance:geometricObjects.exceptionsTests.ExceptionsTest@444c742]" name="quadrateCreationNegativeSide" duration-ms="1" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[Negative side exception!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: Negative side exception!
+	at geometricObjects.exceptionsTests.ExceptionsTest.quadrateCreationNegativeSide(ExceptionsTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadrateCreationNegativeSide -->
+      </class> <!-- geometricObjects.exceptionsTests.ExceptionsTest -->
+    </test> <!-- ExceptionsTests -->
+    <test name="ParametersTests" duration-ms="15" started-at="2015-11-24T06:50:29Z" finished-at="2015-11-24T06:50:29Z">
+      <class name="geometricObjects.parametersTests.ParametersTest">
+        <test-method status="PASS" signature="circleCircumferenceTest(double)[pri:0, instance:geometricObjects.parametersTests.ParametersTest@1a483edb]" name="circleCircumferenceTest" duration-ms="0" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- circleCircumferenceTest -->
+        <test-method status="PASS" signature="quadratePerimeterTest(double)[pri:0, instance:geometricObjects.parametersTests.ParametersTest@1a483edb]" name="quadratePerimeterTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quadratePerimeterTest -->
+        <test-method status="PASS" signature="rectanglePerimeterTest(double)[pri:0, instance:geometricObjects.parametersTests.ParametersTest@1a483edb]" name="rectanglePerimeterTest" duration-ms="0" started-at="2015-11-24T10:50:29Z" finished-at="2015-11-24T10:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rectanglePerimeterTest -->
+      </class> <!-- geometricObjects.parametersTests.ParametersTest -->
+      <class name="geometricObjects.parametersTests.DataProviderTest">
+        <test-method status="PASS" signature="rectangleTest(double, double)[pri:0, instance:geometricObjects.parametersTests.DataProviderTest@5a269232]" name="rectangleTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" data-provider="RectangleSquareParameters" finished-at="2015-11-24T10:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rectangleTest -->
+        <test-method status="PASS" signature="rectangleTest(double, double)[pri:0, instance:geometricObjects.parametersTests.DataProviderTest@5a269232]" name="rectangleTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" data-provider="RectangleSquareParameters" finished-at="2015-11-24T10:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rectangleTest -->
+        <test-method status="FAIL" signature="rectangleTest(double, double)[pri:0, instance:geometricObjects.parametersTests.DataProviderTest@5a269232]" name="rectangleTest" duration-ms="1" started-at="2015-11-24T10:50:29Z" data-provider="RectangleSquareParameters" finished-at="2015-11-24T10:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Square is not correct. Expected: -8.0 Actual: 8.0 expected [-8.0] but found [8.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Square is not correct. Expected: -8.0 Actual: 8.0 expected [-8.0] but found [8.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:209)
+	at geometricObjects.parametersTests.DataProviderTest.rectangleTest(DataProviderTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rectangleTest -->
+      </class> <!-- geometricObjects.parametersTests.DataProviderTest -->
+    </test> <!-- ParametersTests -->
+  </suite> <!-- TestNG suite -->
+</testng-results>

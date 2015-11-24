@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG suite">
+	<test verbose="2" name="ConcreteFigureTests">
+		<classes>
+			<class name="geometricObjects.concreteTests.CircleTest" />
+			<class name="geometricObjects.concreteTests.QuadrateTest" />
+			<class name="geometricObjects.concreteTests.RectangleTest" />	
+		</classes>
+	</test>
+	<test verbose="2" name="ExceptionsTests">
+		<classes>
+			<class name="geometricObjects.exceptionsTests.ExceptionsTest" />
+		</classes>
+	</test>
+	<test verbose="2" name="ParametersTests">
+		<classes>
+			<class name="geometricObjects.parametersTests.DataProviderTest" />
+			<class name="geometricObjects.parametersTests.ParametersTest" />
+		</classes>
+	</test>
+		<test verbose="2" name="FactoryTests">
+		<classes>
+			<class name="geometricObjects.factoryTests.FactoryTest" />
+		</classes>
+	</test>
+</suite> 

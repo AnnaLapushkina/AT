@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG suite]">
+  <test name="ParametersTests(failed)">
+    <classes>
+      <class name="geometricObjects.concreteTests.CircleTest">
+        <methods>
+          <include name="circleCreation"/>
+        </methods>
+      </class> <!-- geometricObjects.concreteTests.CircleTest -->
+      <class name="geometricObjects.concreteTests.RectangleTest">
+        <methods>
+          <include name="rectangleCreation"/>
+        </methods>
+      </class> <!-- geometricObjects.concreteTests.RectangleTest -->
+      <class name="geometricObjects.parametersTests.DataProviderTest">
+        <methods>
+          <include name="rectangleTest" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- geometricObjects.parametersTests.DataProviderTest -->
+      <class name="geometricObjects.concreteTests.QuadrateTest">
+        <methods>
+          <include name="quadrateCreation"/>
+        </methods>
+      </class> <!-- geometricObjects.concreteTests.QuadrateTest -->
+    </classes>
+  </test> <!-- ParametersTests(failed) -->
+</suite> <!-- Failed suite [TestNG suite] -->
